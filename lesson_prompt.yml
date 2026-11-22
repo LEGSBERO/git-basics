@@ -1,0 +1,10 @@
+---
+- name: First Lesson
+  hosts: all
+  vars_prompt:
+    - name: file_name
+      prompt: "Enter file_name"
+      private: no
+  tasks:
+    - name: pwd2file
+      ansible.builtin.shell: pwd >> {{file_name}}.txt

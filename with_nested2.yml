@@ -1,0 +1,10 @@
+---
+- name: Тестируем второй вид циклов
+  hosts: localhost
+  tasks:
+    - name: nested test
+      ansible.builtin.shell: echo "nested test a={{ item[0] }} b={{ item[1] }} c={{ item[2] }}"
+      with_nested:
+        - ['red', 'blue', 'green']
+        - [1, 2, 3]
+        - ['up', 'down', 'strange']

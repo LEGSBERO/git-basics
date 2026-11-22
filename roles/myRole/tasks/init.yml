@@ -1,0 +1,6 @@
+---
+- name: Проверка переменной mode_code
+  ansible.builtin.assert:
+    that:
+      - mode_code != ''
+    success_msg: "Переменная mode_code определена"

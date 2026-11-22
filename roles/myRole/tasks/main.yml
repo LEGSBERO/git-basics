@@ -1,0 +1,10 @@
+---
+- name: Создаем файлы с каким-нибудь названием
+  ansible.builtin.file:
+    path: "./{{ item }}.txt"
+    state: touch
+    mode: '{{ mode_code }}'
+  with_items:
+    - test
+    - DEMO
+    - "{{ ansible_os_family }}"
