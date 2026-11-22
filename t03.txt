@@ -1,0 +1,6 @@
+dog
+sun
+cat
+home
+book
+red

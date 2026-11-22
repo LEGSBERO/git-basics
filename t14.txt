@@ -1,0 +1,3 @@
+He said "hello" and then "goodbye".
+"first text" some text "second text" and "third text"
+"He said \"hello\""

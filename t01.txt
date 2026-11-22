@@ -1,0 +1,4 @@
+The cat is sleeping.
+Acat is an animal.
+concatenate
+cat123
